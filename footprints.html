@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Follow the pawprints of Romeo, a wild wolf remembered by the community of Juneau, Alaska.">
+<title>Follow the Footprints · Romeo</title>
+<link rel="preload" href="assets/forest.jpg" as="image">
+<link rel="preload" href="assets/romeo-encounter-hd.jpg" as="image">
+<link rel="stylesheet" href="opening.css">
+<script>if (new URLSearchParams(location.search).get('from') === 'lake') document.documentElement.classList.add('backtrack');</script>
+<link rel="stylesheet" href="location.css">
+</head>
+<body class="forest-page">
+<nav class="location-nav" aria-label="Story location">
+<details class="location-menu">
+<summary><span>Location</span><span class="location-chevron" aria-hidden="true"></span></summary>
+<ul>
+<li><a href="index.html"><span class="location-dot" aria-hidden="true"></span><span>Main Menu</span></a></li>
+<li><a href="footprints.html" aria-current="page"><span class="location-dot" aria-hidden="true"></span><span>Footprints</span></a></li>
+<li><a href="wolf.html"><span class="location-dot" aria-hidden="true"></span><span>01 · The Encounter</span></a></li>
+<li><a href="wolf.html#friendship"><span class="location-dot" aria-hidden="true"></span><span>02 · An Unexpected Friendship</span></a></li>
+<li><a href="wolf.html#coexistence"><span class="location-dot" aria-hidden="true"></span><span>03 · A Fragile Coexistence</span></a></li>
+<li><a href="wolf.html#disappearance"><span class="location-dot" aria-hidden="true"></span><span>04 · The Disappearance</span></a></li>
+<li><a href="wolf.html#coming-home"><span class="location-dot" aria-hidden="true"></span><span>05 · Coming Home</span></a></li>
+</ul>
+</details>
+</nav>
+<main class="forest" aria-label="Follow the trail through the snowy forest">
+<div class="scene" aria-hidden="true"><svg class="scene-art" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+<defs>
+<image id="print" href="assets/pawprints.png" width="1920" height="1080"/>
+<clipPath id="c1"><rect x="981" y="902" width="132" height="104"/></clipPath>
+<clipPath id="c2"><rect x="790" y="831" width="113" height="104"/></clipPath>
+<clipPath id="c3"><rect x="974" y="721" width="102" height="89"/></clipPath>
+<clipPath id="c4"><rect x="833" y="629" width="99" height="81"/></clipPath>
+<clipPath id="c5"><rect x="970" y="529" width="76" height="65"/></clipPath>
+</defs>
+<image href="assets/forest.jpg" width="1920" height="1080"/>
+<use class="paw" style="--delay:.35s" href="#print" clip-path="url(#c1)"/>
+<use class="paw" style="--delay:.8s" href="#print" clip-path="url(#c2)"/>
+<use class="paw" style="--delay:1.25s" href="#print" clip-path="url(#c3)"/>
+<use class="paw" style="--delay:1.7s" href="#print" clip-path="url(#c4)"/>
+<use class="paw" style="--delay:2.15s" href="#print" clip-path="url(#c5)"/>
+</svg></div>
+<img class="arrival-scene" src="assets/romeo-encounter-hd.jpg" alt="" aria-hidden="true">
+<a href="wolf.html?from=trail" class="follow"><span class="arrow" aria-hidden="true">↑</span><span>Follow the Footprints</span></a>
+</main>
+<script src="opening.js"></script>
+<script src="location.js"></script>
+<script src="ambience.js"></script>
+</body>
+</html>

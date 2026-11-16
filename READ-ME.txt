@@ -1,0 +1,13 @@
+ROMEO: A WILD CONNECTION · Local website
+
+On a Mac, unzip the archive and double-click Open-Romeo.command.
+Your browser opens the title page. Leave the Terminal window open while viewing.
+Click Start to start the soundtrack.
+
+If the launcher is blocked, open Terminal in this folder, run
+python3 -m http.server 8000 --bind 127.0.0.1
+and open http://127.0.0.1:8000/ in your browser.
+
+Use the local web server to keep music and transitions working across pages.
+All images, background music, sound effects, and excerpts are included.
+The Credits page links to the original sources online.

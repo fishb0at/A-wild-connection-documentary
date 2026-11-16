@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>01 — Where the Story Begins · Romeo</title>
+<link rel="stylesheet" href="wolf.css">
+<script>document.documentElement.dataset.romeoEntry = location.hash.slice(1);</script>
+<script>if (new URLSearchParams(location.search).get("from") === "trail") document.documentElement.classList.add("from-trail");</script>
+<link rel="stylesheet" href="location.css">
+</head>
+<body>
+<nav class="location-nav" aria-label="Story location">
+<details class="location-menu">
+<summary><span>Location</span><span class="location-chevron" aria-hidden="true"></span></summary>
+<ul>
+<li><a href="index.html"><span class="location-dot" aria-hidden="true"></span><span>Main Menu</span></a></li>
+<li><a href="footprints.html"><span class="location-dot" aria-hidden="true"></span><span>Footprints</span></a></li>
+<li><a href="wolf.html" aria-current="page"><span class="location-dot" aria-hidden="true"></span><span>01 · The Encounter</span></a></li>
+<li><a href="wolf.html#friendship"><span class="location-dot" aria-hidden="true"></span><span>02 · An Unexpected Friendship</span></a></li>
+<li><a href="wolf.html#coexistence"><span class="location-dot" aria-hidden="true"></span><span>03 · A Fragile Coexistence</span></a></li>
+<li><a href="wolf.html#disappearance"><span class="location-dot" aria-hidden="true"></span><span>04 · The Disappearance</span></a></li>
+<li><a href="wolf.html#coming-home"><span class="location-dot" aria-hidden="true"></span><span>05 · Coming Home</span></a></li>
+</ul>
+</details>
+</nav>
+<main class="wolf-page" aria-label="Chapter 01: Where the Story Begins">
+<div class="wolf-stage">
+<img class="wolf-background" src="assets/romeo-encounter-hd.jpg" width="1920" height="1080" alt="Illustration of Romeo standing in a snowy forest">
+<img class="friendship-art" src="assets/romeo-dakotah.jpg" width="1920" height="1080" alt="Illustration of Romeo and Dakotah facing each other in the snow">
+<img class="coexistence-art" src="assets/romeo-frozen-lake-v2.jpg" width="1920" height="1080" alt="Illustration of a person and a dog watching Romeo from the shore of a frozen lake">
+<img class="later-art" src="assets/forest.jpg" width="1920" height="1080" alt="Illustration of the snowy forest">
+<img class="memorial-art" src="assets/romeo-coming-home.jpg" width="1920" height="1080" alt="Illustration of Romeo resting on a rock in warm light">
+<button class="wolf-hotspot" type="button" aria-label="Open Field Notes about Romeo" aria-controls="encounter-notes" aria-expanded="false"></button>
+</div>
+<details class="field-notes" id="encounter-notes">
+<summary><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 3h13v18H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm2 0v18m3-12h5m-5 4h5"/></svg><span>Field Notes</span><span class="note-icon" aria-hidden="true"></span></summary>
+<div class="note-body" tabindex="0" aria-label="Scrollable chapter notes">
+<section class="note-chapter" id="encounter-chapter" aria-labelledby="chapter-title">
+<div class="chapter-title">
+<p class="label">01 / Mendenhall Lake, Alaska · 2003</p>
+<h1 id="chapter-title">Where the Story Begins</h1>
+<p class="lede">Wolf tracks near a house led out onto Mendenhall Lake.</p>
+</div>
+<section class="story-text">
+<h2>Tracks in the snow</h2>
+<p>In 2003, Nick Jans was living near Mendenhall Lake, outside Juneau, Alaska. Near his door, he noticed a set of wolf tracks leading out toward the lake.</p>
+<p>At the end of the trail stood a lone black wolf.</p>
+</section>
+<div class="encounter-audio">
+<button type="button" id="play-excerpt" aria-controls="ktoo-excerpt">▶ Play excerpt</button>
+<span class="audio-time" aria-hidden="true">0:00 / 0:23</span>
+<audio id="ktoo-excerpt" preload="none" src="assets/chapter01-excerpt.m4a"></audio>
+
+</div>
+<figure class="note-map">
+<svg viewBox="0 0 720 540" role="img" aria-labelledby="lake-label">
+<title id="lake-label">Hand-drawn map of Alaska showing Mendenhall Lake near Juneau</title>
+<defs>
+<linearGradient id="water" x2="0" y2="1"><stop stop-color="#273d3a"/><stop offset="1" stop-color="#182d2c"/></linearGradient>
+<path id="alaska" d="M288 63L309 65 322 57 334 37 354 32 369 24 388 22 399 12 408 26 421 26 432 40 452 44 478 52 500 54 516 58 530 68 541 316 554 319 569 314 578 327 592 340 605 349 613 344 625 340 640 354 645 368 658 378 665 390 686 398 699 410 710 415 707 431 695 427 682 416 671 419 665 404 651 397 644 385 630 374 622 363 607 361 595 349 579 342 565 330 546 331 531 327 512 327 494 317 475 321 467 308 454 317 451 305 441 291 431 303 419 303 414 315 401 327 393 341 378 340 370 350 381 355 372 365 357 375 340 382 327 391 311 399 290 410 261 419 248 426 230 428 244 414 263 409 278 396 292 390 308 379 321 374 330 356 339 338 324 347 315 339 308 349 300 341 286 339 277 330 278 317 272 303 258 303 250 294 252 282 242 277 248 268 240 258 250 244 260 234 273 230 279 220 299 217 314 208 312 195 317 183 302 188 290 182 270 183 260 176 255 159 248 147 266 137 284 133 297 137 307 146 320 139 334 146 338 140 319 129 306 120 302 105 296 96 295 85 284 78Z"/>
+<clipPath id="land-mask"><use href="#alaska"/></clipPath>
+</defs>
+<rect width="720" height="540" fill="url(#water)"/>
+<use href="#alaska" fill="#8ca297" stroke="#d1dbbd" stroke-width="2" stroke-linejoin="round"/>
+<g fill="#8ca297" stroke="#d1dbbd" stroke-width="1.3">
+<path d="M192 181l8 3 6 1 10 11 5 4-5 4-13-10-11-3zM216 283l13 2 6 8-10 1zM603 358l9 4 5 10-6 5-9-12zM623 377l10 6 1 13-7-4-5-10zM642 391l8 1 6 14-7 2-9-11zM656 410l6-1 7 9-6 4zM672 424l10-4 8 10-6 6z"/>
+<path d="M227 426l-15 7-14-1 9-5zM192 438l-13 5-8-2 10-5zM169 438l-8 8-12 1 8-6zM146 449l-10 3-8-2 9-3zM113 452l8-2-3 3zM82 449l10 1-4 2zM46 442l14-3 5 5-10 2z"/>
+</g>
+<g clip-path="url(#land-mask)" fill="none" stroke="#314e47" opacity=".28" stroke-width="2">
+<path d="M210 147q122-76 246-38t146-2M213 166q122-76 246-38t146-2M215 186q122-76 246-38t146-2M215 267q100-57 209-27t150 8M219 281q100-57 209-27t150 8M224 295q100-57 209-27t150 8M347 318q100-57 209-27t150 8"/>
+</g>
+<text x="393" y="218" text-anchor="middle" fill="#203a35" font-family="Georgia,serif" font-size="29" letter-spacing="5">ALASKA</text>
+<g fill="none" stroke="#f0ba68" stroke-width="3">
+<circle cx="629" cy="356" r="28"/><path d="M629 390v93H385" stroke-dasharray="2 8" stroke-linecap="round"/>
+</g>
+<circle cx="629" cy="356" r="7" fill="#f0ba68"/>
+<text x="44" y="493" fill="#fcf1d4" font-family="Georgia,serif" font-size="35">Mendenhall Lake</text>
+</svg></figure>
+
+<a class="next chapter-scroll turn-arrow" href="wolf.html#friendship" aria-label="Turn to chapter 02"><span aria-hidden="true">↓</span></a>
+</section>
+<section class="note-chapter friendship-chapter" id="friendship" aria-labelledby="friendship-title" hidden>
+<p class="label">02 / Mendenhall Lake, Alaska</p>
+<h1 id="friendship-title">An Unexpected Friendship</h1>
+<p class="lede">The black wolf kept coming back. Soon, Nick and Sherrie Jans began to see who he was waiting for.</p>
+<div class="story-text">
+<h2>Waiting for Dakotah</h2>
+<p>Nick Jans recalls seeing the wolf near his home on many mornings. Sometimes the tracks led right up to the door. The wolf had taken an interest in Dakotah, the family’s yellow Labrador.</p>
+<h2>A name that stuck</h2>
+<p>Sherrie was protective of Dakotah. One morning, she saw the wolf curled up in the yard, waiting for Dakotah to come out. Sherrie called him the Romeo wolf, and the name stuck.</p>
+</div>
+<div class="encounter-audio" data-start="0" data-end="35">
+<button type="button" aria-controls="friendship-excerpt">▶ Play excerpt</button>
+<span class="audio-time" aria-hidden="true">0:00 / 0:35</span>
+<audio id="friendship-excerpt" preload="none" src="assets/chapter02-excerpt.m4a"></audio>
+</div>
+<a class="next chapter-scroll turn-arrow" href="wolf.html#coexistence" aria-label="Turn to chapter 03"><span aria-hidden="true">↓</span></a>
+</section>
+<section class="note-chapter" id="coexistence" aria-labelledby="coexistence-title" hidden>
+<p class="label">03 / Mendenhall Lake, Alaska</p>
+<h1 id="coexistence-title">A Fragile Coexistence</h1>
+<p class="lede">As word spread, people came to Mendenhall Lake hoping to catch a glimpse of Romeo.</p>
+<div class="story-text">
+<h2>Sharing the ice</h2>
+<p>Romeo became a familiar sight around the lake, but every encounter happened on his terms. Nick Jans recalled one afternoon when he lay down on the ice with his dog Gus. Romeo rested nearby, close enough to share the quiet and far enough to leave whenever he wanted.</p>
+<h2>A voice across the lake</h2>
+<p>Other residents knew Romeo by sound. At night, his howls carried across the lake and could sometimes be heard from the West Glacier Trail.</p>
+</div>
+<div class="encounter-audio" data-start="0" data-end="38">
+<button type="button" aria-controls="coexistence-excerpt">▶ Play excerpt</button>
+<span class="audio-time" aria-hidden="true">0:00 / 0:38</span>
+<audio id="coexistence-excerpt" preload="none" src="assets/chapter03-excerpt.m4a"></audio>
+</div>
+<a class="next chapter-scroll turn-arrow" href="wolf.html#disappearance" aria-label="Turn to chapter 04"><span aria-hidden="true">↓</span></a>
+</section>
+<section class="note-chapter" id="disappearance" aria-labelledby="disappearance-title" hidden>
+<p class="label">04 / Mendenhall Lake, Alaska</p>
+<h1 id="disappearance-title">The Disappearance</h1>
+<p class="lede">In September 2009, Romeo disappeared.</p>
+<div class="story-text"><h2>An unanswered absence</h2><p>After six years of encounters near the lake, Romeo stopped appearing. Harry Robinson helped investigate, and wildlife authorities eventually found that two poachers had killed him.</p></div>
+<div class="case-file">
+<button type="button" class="folder-button" aria-label="Open the Romeo case file" aria-controls="romeo-poster" aria-expanded="false">
+<svg class="case-folder" viewBox="0 0 360 166" aria-hidden="true">
+<defs><pattern id="folder-grain" width="11" height="9" patternUnits="userSpaceOnUse"><path d="M1 2h1m6 5h1m-4 1h1" stroke="#5b513b" opacity=".23"/></pattern></defs>
+<path d="M33 44h47l14-17h79l14 17h140v106H33z" fill="#b9ab86" stroke="#585546" stroke-width="2" stroke-linejoin="round"/>
+<g class="folder-sheet"><path d="M62 56l6-13 239 3 2 89-245 1z" fill="#f8efd7" stroke="#8a7c5f"/></g>
+<g class="folder-flap">
+<path d="M23 64h314l-10 86H33z" fill="#d6be89" stroke="#585546" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M23 64h314l-10 86H33z" fill="url(#folder-grain)"/>
+<rect x="78" y="83" width="204" height="44" rx="2" fill="#f4e8cc" stroke="#8d7960"/>
+<text x="180" y="111" text-anchor="middle" fill="#2e433b" font-family="Georgia,serif" font-size="23">THE ROMEO FILE</text>
+</g>
+</svg>
+</button>
+<div class="poster-reveal" id="romeo-poster" aria-hidden="true" inert>
+<div class="poster-window">
+<article class="missing-poster" aria-label="Illustrated missing-wolf poster">
+<p class="label">September 2009 · Juneau, Alaska</p>
+<h2>Missing: Romeo</h2>
+<img src="assets/romeo-poster-portrait.png" width="592" height="598" alt="Close-up of a black wolf in falling snow">
+<p>Wild black wolf last seen near Mendenhall Lake.</p>
+<small>Illustrated notice based on published reporting.</small>
+</article>
+</div>
+</div>
+</div>
+<a class="next chapter-scroll turn-arrow" href="wolf.html#coming-home" aria-label="Turn to chapter 05"><span aria-hidden="true">↓</span></a>
+</section>
+<section class="note-chapter" id="coming-home" aria-labelledby="coming-home-title" hidden>
+<p class="label">05 / Mendenhall Lake, Alaska</p>
+<h1 id="coming-home-title">Coming Home</h1>
+<p class="lede">Romeo never returned to the lake, but Juneau kept his story.</p>
+<div class="story-text">
+<h2>A place to remember</h2>
+<p>Nick Jans helped bring Romeo’s story back to Mendenhall Lake. In 2017, an exhibit opened at the Mendenhall Glacier Visitor Center, where visitors could hear Romeo’s recorded howls and see a bronze cast of his paw print.</p>
+<p>The tracks that first led Jans out to the ice were long gone. A single paw print now helps people remember the wolf who left them.</p>
+</div>
+<div class="memorial-paw" aria-hidden="true">
+<svg viewBox="0 0 96 96" focusable="false">
+<defs><linearGradient id="memorial-bronze" x1="0%" x2="100%" y1="0%" y2="100%"><stop stop-color="#d7ad65"/><stop offset="1" stop-color="#76502d"/></linearGradient></defs>
+<g fill="url(#memorial-bronze)" stroke="#795333" stroke-width="1.2">
+<path d="M27 60c5-4 10-17 21-17s16 13 21 17c8 6 10 13 5 20-5 6-13 4-19 2-5-2-9-2-14 0-7 2-15 4-20-2-5-7-2-14 6-20Z"/>
+<ellipse cx="19" cy="42" rx="8" ry="12" transform="rotate(-27 19 42)"/>
+<ellipse cx="36" cy="29" rx="8" ry="13" transform="rotate(-9 36 29)"/>
+<ellipse cx="58" cy="29" rx="8" ry="13" transform="rotate(8 58 29)"/>
+<ellipse cx="76" cy="42" rx="8" ry="12" transform="rotate(25 76 42)"/>
+</g>
+</svg>
+</div>
+<div class="encounter-audio" data-start="0" data-end="29.239">
+<button type="button" aria-controls="memorial-excerpt">▶ Play excerpt</button>
+<span class="audio-time" aria-hidden="true">0:00 / 0:29</span>
+<audio id="memorial-excerpt" preload="none" src="assets/chapter05-excerpt.m4a"></audio>
+</div>
+<p><a href="credits.html">Credits</a></p>
+</section>
+</div>
+</details>
+</main>
+<script src="wolf.js"></script>
+<script src="location.js"></script>
+<script src="ambience.js"></script>
+</body>
+</html>

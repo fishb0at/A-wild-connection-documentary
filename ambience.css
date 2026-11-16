@@ -1,0 +1,6 @@
+.ambience-toggle{position:fixed;z-index:18;top:clamp(.8rem,3vw,1.5rem);right:clamp(.8rem,3vw,1.5rem);display:inline-flex;align-items:center;gap:.45rem;min-height:44px;border:1px solid #f9f1db;border-radius:999px;padding:.5rem .75rem;background:#243539;color:#fff9e8;font:600 .78rem system-ui,sans-serif;cursor:pointer;animation:control-in .48s ease-out .24s backwards}
+body:has(.wolf-page) .ambience-toggle{top:auto;bottom:max(1rem,env(safe-area-inset-bottom));left:clamp(.8rem,3vw,1.5rem);right:auto}
+body:has(.forest.travel,.wolf-page.returning) .ambience-toggle{opacity:0;pointer-events:none;transition:opacity .2s}
+.ambience-toggle:focus-visible{outline:2px solid #f1c97e;outline-offset:3px;animation:none}
+@media(max-width:680px){body:has(.field-notes[open]) .ambience-toggle{bottom:calc(61svh + .7rem)}}
+@media(prefers-reduced-motion:reduce){.ambience-toggle{animation:none}}

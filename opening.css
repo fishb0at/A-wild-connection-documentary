@@ -1,0 +1,39 @@
+*{box-sizing:border-box}
+body{margin:0;background:#070808;color:#f5f2eb;font:16px system-ui,sans-serif}
+.title-page{min-height:100svh;display:grid;place-items:center;padding:1.5rem}
+.title-copy{text-align:center;max-width:60rem;animation:appear .65s ease-out both}
+.eyebrow{letter-spacing:.26em;text-transform:uppercase;font-size:.68rem;font-weight:650}
+h1{font:400 clamp(3rem,8vw,7.1rem)/.98 Georgia,serif;letter-spacing:-.06em;margin:.65rem 0 1.2rem;text-wrap:balance}
+.subtitle{font:italic clamp(1rem,2.2vw,1.4rem)/1.5 Georgia,serif;color:#d5d3cb;text-wrap:balance}
+.start{display:inline-flex;align-items:center;gap:1.1rem;margin-top:1.5rem;border:1px solid #aeaaa0;border-radius:999px;padding:.7rem 1.15rem;color:inherit;text-decoration:none}
+.start:hover{background:#f5f2eb;color:#070808}
+a:focus-visible{outline:3px solid #e1c882;outline-offset:5px}
+.forest{height:100svh;position:relative;overflow:hidden;isolation:isolate;animation:appear .7s ease-out both}
+.scene{display:block;position:absolute;inset:0;width:100%;height:100%;transform-origin:52.4% 49%;transition:transform .95s cubic-bezier(.55,.06,.77,.6),filter .95s ease-in}
+.paw{opacity:0;animation:appear .42s ease-out both;animation-delay:var(--delay)}
+@keyframes appear{from{opacity:0}to{opacity:1}}
+.follow{position:absolute;left:52.4%;top:44%;translate:-50% -100%;display:grid;justify-items:center;gap:.55rem;color:#fffdf2;text-decoration:none;font-size:.8rem;white-space:nowrap;animation:appear .45s 2.63s both}
+.follow:focus-visible{animation:none}
+.arrow{display:grid;place-items:center;width:50px;height:50px;border-radius:50%;border:1px solid #f5f2eb;background:#172327de;font-size:1.6rem;transition:transform .2s,background .2s}
+.follow span:last-child{padding:.32rem .65rem;border-radius:20px;background:#172327de}
+.follow:hover .arrow,.follow:focus-visible .arrow{transform:translateY(-4px);background:#070808}
+.forest.travel .scene{transform:scale(2.4);filter:brightness(0)}
+.forest.travel .follow{animation:none;opacity:0;transition:opacity .2s;pointer-events:none}
+@media(prefers-reduced-motion:reduce){.title-copy,.forest,.paw,.follow{animation:none;opacity:1}.arrow,.scene{transition:none}}
+
+.backtrack .forest-page{background:#313f41}
+.backtrack .forest{animation:none;background:url("assets/forest.jpg") center bottom/cover no-repeat}
+.backtrack .scene-art{animation:backtrack .85s cubic-bezier(.22,.58,.35,1) both}
+@keyframes backtrack{from{transform:scale(1.17)}to{transform:scale(1)}}
+.backtrack .paw{animation-delay:calc(2.35s - var(--delay))}
+.backtrack .follow{animation-delay:1.95s}
+@media(prefers-reduced-motion:reduce){.backtrack .scene-art,.backtrack .paw,.backtrack .follow{animation:none;opacity:1}}
+
+.forest-page{background:#313f41 url("assets/forest.jpg") center bottom/cover no-repeat}
+.scene{transition:transform .92s cubic-bezier(.32,.08,.27,1)}
+.arrival-scene{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center bottom;opacity:0;transition:opacity .49s ease .41s;pointer-events:none}
+.forest.travel .scene{transform:scale(1.42);filter:none}
+.forest.travel .arrival-scene{opacity:1}
+.backtrack .paw,.backtrack .follow{animation-delay:0s}
+
+.scene-art{display:block;width:100%;height:100%;transform-origin:52.4% 49%}

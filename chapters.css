@@ -1,0 +1,16 @@
+*{box-sizing:border-box}
+body{margin:0;min-height:100svh;background:#efede4;color:#243539;font:16px/1.6 system-ui,sans-serif}
+a{color:inherit;text-underline-offset:4px}
+a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+header{display:flex;justify-content:space-between;align-items:center;gap:.75rem;padding:1rem max(4vw,1rem);border-bottom:1px solid #24353930}
+.brand{font:1.55rem Georgia,serif;text-decoration:none}
+header nav,.pager{display:flex;flex-wrap:wrap;gap:.35rem}
+header nav a{display:grid;place-items:center;min-width:40px;min-height:44px;text-decoration:none;border-radius:50%;font-size:.8rem}
+header nav a:hover{background:#24353915}
+header nav a[aria-current]{background:#243539;color:#efede4}
+main{width:min(46rem,100% - 2rem);margin:auto;padding:clamp(2rem,9vh,6rem) 0}
+.number{font:clamp(4rem,13vw,9rem)/1 Georgia,serif;color:#526865}
+.label{text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;font-weight:650}
+h1{font:clamp(2.3rem,7vw,5rem)/1.05 Georgia,serif;margin:.5rem 0 1.5rem}
+.intro{max-width:36rem}
+.pager{justify-content:space-between;gap:1rem;margin-top:3rem;padding-top:1.25rem;border-top:1px solid #24353940}

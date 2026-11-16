@@ -1,0 +1,37 @@
+.location-nav{position:fixed;z-index:20;top:clamp(.8rem,3vw,1.5rem);left:clamp(.8rem,3vw,1.5rem);color:#fff9e8;font:14px/1.35 system-ui,sans-serif}
+.location-menu>summary{display:flex;align-items:center;gap:.65rem;width:max-content;min-height:44px;padding:.55rem .9rem;background:#243539;border:1px solid #f9f1db;border-radius:999px;font-weight:650;list-style:none;cursor:pointer}
+.location-menu>summary::-webkit-details-marker{display:none}
+.location-chevron{width:.48rem;height:.48rem;border:solid currentColor;border-width:0 1.5px 1.5px 0;transform:rotate(45deg) translateY(-2px);transition:transform .2s ease}
+.location-menu[open] .location-chevron{transform:rotate(225deg) translate(-1px,-1px)}
+.location-menu>ul{list-style:none;width:min(18rem,calc(100vw - 2rem));margin:.5rem 0 0;padding:.4rem;background:#202f31;border:1px solid #b6b5a2;border-radius:.75rem;box-shadow:0 12px 32px #0b16177a;max-height:calc(100svh - 5rem);overflow:auto}
+.location-menu a{display:flex;align-items:center;gap:.65rem;padding:.55rem .65rem;min-height:40px;border-radius:.35rem;color:#f5efe1;text-decoration:none}
+.location-menu a:hover,.location-menu>summary:hover{background:#394d50}
+.location-menu a[aria-current="page"]{color:#ffe0a3;background:#374642;font-weight:700}
+.location-dot{flex:0 0 .5rem;width:.5rem;height:.5rem;border:1px solid currentColor;border-radius:50%}
+.location-menu a[aria-current="page"] .location-dot{background:#ffcf7e;border-color:#ffcf7e;box-shadow:0 0 0 3px #ffcf7e30}
+.location-menu :focus-visible{outline:2px solid #ffe0a3;outline-offset:-2px}
+.location-chapter main{padding-top:max(5.5rem,9vh)}
+body:has(.forest.travel,.wolf-page.returning) .location-nav{opacity:0;pointer-events:none;transition:opacity .2s}
+@media(prefers-reduced-motion:reduce){.location-chevron{transition:none}}
+
+@keyframes control-in{from{opacity:0}to{opacity:1}}
+.location-menu>summary,.start,.back,.field-notes>summary,.pager a,.encounter-audio button,.note-body .next{
+  animation:control-in .48s ease-out .14s backwards;
+}
+.start{animation-delay:.42s}
+.back{animation-delay:.32s}
+.field-notes>summary{animation-delay:.24s}
+.backtrack .follow{animation:control-in .48s ease-out .12s backwards}
+.location-menu[open]>ul{animation:control-in .24s ease-out backwards}
+.location-menu[open] li{animation:control-in .28s ease-out calc(var(--order,0) * 32ms) backwards}
+.location-menu li:nth-child(2){--order:1}
+.location-menu li:nth-child(3){--order:2}
+.location-menu li:nth-child(4){--order:3}
+.location-menu li:nth-child(5){--order:4}
+.location-menu li:nth-child(6){--order:5}
+.location-menu li:nth-child(7){--order:6}
+:is(.start,.back,.field-notes>summary,.location-menu>summary,.pager a,.encounter-audio button,.note-body .next,.follow):focus-visible,
+.forest.travel .follow,.wolf-page.returning :is(.back,.field-notes>summary){animation:none}
+@media(prefers-reduced-motion:reduce){
+.location-menu>summary,.start,.back,.field-notes>summary,.pager a,.encounter-audio button,.note-body .next,.backtrack .follow,.location-menu[open]>ul,.location-menu[open] li{animation:none}
+}
